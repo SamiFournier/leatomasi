@@ -123,7 +123,7 @@
            next();
       });
 
-      $("#langueBox").css({"top":langueTop, left:langueLeft}).animate({
+      $("#langueBox").css({"top":langueTop, "left":langueLeft}).animate({
         width:langueWidth,
       }, 150, function(){}).animate({
         width:"0px",
