@@ -112,7 +112,6 @@
 
       if (mouseXL+75 > 0) {
         langueWidth = Math.sqrt((mouseXL * mouseXL) + (mouseYL * mouseYL))
-        console.log(mouseXL);
       } else {
         langueWidth = 0;
       }
