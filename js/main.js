@@ -109,43 +109,59 @@
       let rotationDegreesL = Math.atan2(-mouseYL, -mouseXL) * 180 / Math.PI + 180;
       langue.style.transform = `rotate(${rotationDegreesL}deg)`;
 
-      if (mouseXL+75 > 0) {
         langueWidth = Math.sqrt((mouseXL * mouseXL) + (mouseYL * mouseYL))
-      } else {
-        langueWidth = 0;
-      }
+
     });
 
 
 
     $('#cameleon').click(function(){
       $("#CAMmachoire").addClass("eatMouth").delay(500).queue(function(next){
-          console.log(langueLeft);
           $(this).removeClass("eatMouth");
           next();
       });
 
-      let langueTop = $('#CAMpupille').height() * 0.23;
-      let langueLeft = $('#CAMpupille').width() * 0.18;
+      let langueTop = $('#CAMpupille').height() * 0.21;
+      let langueLeft = $('#CAMpupille').width() * 0.19;
 
       $("#langueBox").css({"top":langueTop, "left":langueLeft}).animate({
         width:langueWidth,
-      }, 150, function(){}).animate({
+      }, 200, function(){}).animate({
         width:"0px",
       }, 200, function(){})
     })
 
     //langue collision
 
-    $(".mouche").click(function(){
-      $(this).delay(150).queue(function(next){
+    $(document).on('click', '.mouche', function(){
+      $(this).delay(200).queue(function(next){
           $(this).addClass("hideMouche");
+          console.log(this);
           next();
-      }).delay(15000).queue(function(next){
-          $(this).removeClass("hideMouche");
-          next();
-      });
+      })
     });
+
+    //generation mouches
+
+    let moucheDepCote;
+    let moucheDepNum;
+    let moucheType;
+    let moucheTypeBox;
+    let moucheImage;
+    let htmlInsert;
+
+    setInterval(function () {
+        moucheDepCote = Math.floor(Math.random()*2)+1;
+        moucheDepNum = Math.floor(Math.random()*3)+1;
+        moucheType = "mouche"+moucheDepCote+moucheDepNum;
+        moucheTypeBox = moucheType+"B";
+        moucheImage = "mouche"+moucheDepCote;
+
+        htmlInsert = "<div class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
+        $("#CAM").append(htmlInsert);
+
+    }, Math.floor(Math.random() * 1000 * 6));
+
 
     // kMoove
     var playOneTime = false;
