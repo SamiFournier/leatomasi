@@ -97,8 +97,7 @@
     //mouth
 
     let langueWidth;
-    let langueTop = $('#CAMpupille').height() * 0.23;
-    let langueLeft = $('#CAMpupille').width() * 0.18;
+
 
 
     document.querySelector('body').addEventListener('mousemove', (ev) => {
@@ -117,12 +116,17 @@
       }
     });
 
+
+
     $('#cameleon').click(function(){
       $("#CAMmachoire").addClass("eatMouth").delay(500).queue(function(next){
           console.log(langueLeft);
           $(this).removeClass("eatMouth");
           next();
       });
+
+      let langueTop = $('#CAMpupille').height() * 0.23;
+      let langueLeft = $('#CAMpupille').width() * 0.18;
 
       $("#langueBox").css({"top":langueTop, "left":langueLeft}).animate({
         width:langueWidth,
