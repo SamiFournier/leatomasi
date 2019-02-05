@@ -100,6 +100,7 @@
     let langueTop = $('#CAMpupille').height() * 0.23;
     let langueLeft = $('#CAMpupille').width() * 0.18;
 
+
     document.querySelector('body').addEventListener('mousemove', (ev) => {
       let langue = document.querySelector('#langueBox');
       let mouseXL = ev.pageX - $('#CAMpupille').width() * 0.18;
@@ -119,8 +120,9 @@
 
     $('#cameleon').click(function(){
       $("#CAMmachoire").addClass("eatMouth").delay(500).queue(function(next){
-           $(this).removeClass("eatMouth");
-           next();
+          console.log(langueLeft);
+          $(this).removeClass("eatMouth");
+          next();
       });
 
       $("#langueBox").css({"top":langueTop, "left":langueLeft}).animate({
