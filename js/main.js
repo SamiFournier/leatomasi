@@ -151,16 +151,16 @@
     let htmlInsert;
 
     setInterval(function () {
-        moucheDepCote = Math.floor(Math.random()*2)+1;
-        moucheDepNum = Math.floor(Math.random()*3)+1;
-        moucheType = "mouche"+moucheDepCote+moucheDepNum;
-        moucheTypeBox = moucheType+"B";
-        moucheImage = "mouche"+moucheDepCote;
+        let moucheDepCote = Math.floor(Math.random()*2)+1;
+        let moucheType = "mouche"+moucheDepCote;
+        let moucheTypeBox = moucheType+"B";
+        let moucheImage = "mouche"+moucheDepCote;
+        let moucheHeight = Math.floor(Math.random()*100);
 
-        htmlInsert = "<div class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
+        htmlInsert = "<div style='top:"+moucheHeight+"vh;' class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
         $("#CAM").append(htmlInsert);
 
-    }, Math.floor(Math.random() * 1000 * 10) + 3000 );
+    }, Math.floor(Math.random() * 1000 * 10));
 
 
     // kMoove

@@ -809,47 +809,21 @@ img.superpose2 {
   z-index: 16;
 }
 
-.mouche11 {
+.mouche1 {
   animation: fly 4s ease-in-out infinite, fly-rotate1 4s ease-in-out infinite;
 }
-.mouche11B{
-  animation: move11 20s ease-out forwards;
+.mouche1B{
+  animation: move1 23s ease-out forwards;
 }
 
-.mouche12 {
-  animation: fly 4s ease-in-out infinite, fly-rotate1 4s ease-in-out infinite;
-}
-.mouche12B{
-  animation: move12 23s ease-out forwards;
-}
 
-.mouche13 {
-  animation: fly 4s ease-in-out infinite, fly-rotate1 4s ease-in-out infinite;
-}
-.mouche13B{
-  animation: move13 27s ease-out forwards;
-}
-
-.mouche21 {
+.mouche2 {
   animation: fly 4s ease-in-out infinite, fly-rotate2 4s ease-in-out infinite;
 }
-.mouche21B{
-  animation: move21 19s ease-out forwards;
+.mouche2B{
+  animation: move2 27s ease-out forwards;
 }
 
-.mouche22 {
-  animation: fly 4s ease-in-out infinite, fly-rotate2 4s ease-in-out infinite;
-}
-.mouche22B{
-  animation: move22 22s ease-out forwards;
-}
-
-.mouche23 {
-  animation: fly 4s ease-in-out infinite, fly-rotate2 4s ease-in-out infinite;
-}
-.mouche23B{
-  animation: move23 25s ease-out forwards;
-}
 
 
 .hideMouche {
@@ -899,57 +873,22 @@ img.superpose2 {
 	}
 }
 
-@keyframes move11 {
+@keyframes move1 {
 	0% {
-    transform: translate(-10vw) translateY(25vh);
+    transform: translate(-10vw) ;
 	}
     100% {
-		 transform: translate(110vw) translateY(25vh);
+		 transform: translate(110vw);
 	}
 }
 
-@keyframes move12 {
-	0% {
-    transform: translate(-10vw) translateY(40vh);
-	}
-    100% {
-		 transform: translate(110vw) translateY(35vh);
-	}
-}
 
-@keyframes move13 {
+@keyframes move2 {
 	0% {
-    transform: translate(-20vw) translateY(80vh);
+    transform: translate(100vw) ;
 	}
     100% {
-		 transform: translate(110vw) translateY(55vh);
-	}
-}
-
-@keyframes move21 {
-	0% {
-    transform: translate(100vw) translateY(15vh);
-	}
-    100% {
-		 transform: translate(-10vw) translateY(15vh);
-	}
-}
-
-@keyframes move22 {
-	0% {
-    transform: translate(100vw) translateY(45vh);
-	}
-    100% {
-		 transform: translate(-10vw) translateY(45vh);
-	}
-}
-
-@keyframes move23 {
-	0% {
-    transform: translate(100vw) translateY(70vh);
-	}
-    100% {
-		 transform: translate(-10vw) translateY(80vh);
+		 transform: translate(-10vw);
 	}
 }
 
