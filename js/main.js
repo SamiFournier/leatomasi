@@ -160,7 +160,7 @@
         htmlInsert = "<div class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
         $("#CAM").append(htmlInsert);
 
-    }, Math.floor(Math.random() * 1000 * 6));
+    }, Math.floor(Math.random() * 1000 * 10) + 3000 );
 
 
     // kMoove

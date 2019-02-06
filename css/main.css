@@ -813,14 +813,14 @@ img.superpose2 {
   animation: fly 4s ease-in-out infinite, fly-rotate1 4s ease-in-out infinite;
 }
 .mouche11B{
-  animation: move11 17s ease-out forwards;
+  animation: move11 20s ease-out forwards;
 }
 
 .mouche12 {
   animation: fly 4s ease-in-out infinite, fly-rotate1 4s ease-in-out infinite;
 }
 .mouche12B{
-  animation: move12 21s ease-out forwards;
+  animation: move12 23s ease-out forwards;
 }
 
 .mouche13 {
