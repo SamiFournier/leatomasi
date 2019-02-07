@@ -155,7 +155,7 @@
         let moucheType = "mouche"+moucheDepCote;
         let moucheTypeBox = moucheType+"B";
         let moucheImage = "mouche"+moucheDepCote;
-        let moucheHeight = Math.floor(Math.random()*100);
+        let moucheHeight = Math.floor(Math.random()*80);
 
         htmlInsert = "<div style='top:"+moucheHeight+"vh;' class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
         $("#CAM").append(htmlInsert);
