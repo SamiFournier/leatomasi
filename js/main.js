@@ -17,7 +17,7 @@
       nbColonne = 20
     }
 
-    nbLigne = Math.floor($("#contact").height()/($("#contact").width()/nbColonne*1.11))+1
+    nbLigne = Math.floor($("#contact").height()/($("#contact").width()/nbColonne*1))+1
 
     for (var i = 0; i < (nbColonne*nbLigne); i++) {
         $("#hideK").append('<img class="coverK" src="./images/homepage/kseul.png" alt="">');
@@ -136,33 +136,43 @@
     $(document).on('click', '.mouche', function(){
       $(this).delay(200).queue(function(next){
           $(this).addClass("hideMouche");
-          console.log(this);
+          $("#CAMcoeur").slideDown(200, function() {}).delay(300).queue(function(next) {
+            $("#CAMcoeur").hide();
+            next();
+          });
           next();
       })
     });
 
     //generation mouches
 
-    let moucheDepCote;
-    let moucheDepNum;
-    let moucheType;
-    let moucheTypeBox;
-    let moucheImage;
-    let htmlInsert;
+
+
+
 
     setInterval(function () {
       if (document.hasFocus()) {
+        let moucheIsLibellule;
+
+        if (Math.floor(Math.random()*2) == 0) {
+          moucheIsLibellule="mouche";
+        } else {
+          moucheIsLibellule = "libellule";
+        }
+
         let moucheDepCote = Math.floor(Math.random()*2)+1;
         let moucheType = "mouche"+moucheDepCote;
         let moucheTypeBox = moucheType+"B";
-        let moucheImage = "mouche"+moucheDepCote;
+        let moucheImage = moucheIsLibellule+moucheDepCote;
         let moucheHeight = Math.floor(Math.random()*80);
 
-        htmlInsert = "<div style='top:"+moucheHeight+"vh;' class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
-        $("#CAM").append(htmlInsert);    
-      }
+        let htmlInsert;
 
-    }, Math.floor(Math.random() * 1000 * 6));
+        htmlInsert = "<div style='top:"+moucheHeight+"vh;' class='"+moucheTypeBox+" moucheB'><img class='mouche "+moucheType+"' src='./images/homepage/"+moucheImage+".svg' alt='mouche'></div>";
+          $("#CAM").append(htmlInsert);
+        }
+
+    }, Math.floor(Math.random() * 1000 * 5));
 
 
     // kMoove

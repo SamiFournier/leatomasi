@@ -662,13 +662,13 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
 
 /* position fixe du logo  */
 #logo.loaded {
-  height: 30vh;
+  height: 20vh;
   animation: logo1 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0S 1 normal both;
 }
 @keyframes logo1 {
-  0% {transform: translate(calc(50vw - 30%), 100vh);}
+  0% {transform: translate(calc(50vw - 50%), 100vh);}
   100% {
-    transform: translate(calc(50vw - 30%), calc(50vh - 50%));
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
     /* position: fixed; */
   }
 }
@@ -758,6 +758,14 @@ img.superpose2 {
    z-index: 11;
    transform-origin: 17.5% 25%;
 }
+#CAMcoeur {
+  z-index: 15;
+  top : 12vh;
+  left: 18vw;
+  height: 4vh;
+  display: none;
+}
+
 
 #langueBox {
   overflow: hidden;
@@ -891,6 +899,27 @@ img.superpose2 {
 		 transform: translate(-10vw);
 	}
 }
+
+
+#bandeaux {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  justify-content : center;
+  align-items: center;
+}
+
+#bandeaux img {
+  width: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 
 /* =====================
 Contact
