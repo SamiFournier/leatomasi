@@ -172,7 +172,7 @@
           $("#CAM").append(htmlInsert);
         }
 
-    }, Math.floor(Math.random() * 1000 * 5));
+    }, Math.floor(Math.random() * 1000 * 6));
 
 
     // kMoove
