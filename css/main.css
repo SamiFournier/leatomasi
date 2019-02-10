@@ -920,6 +920,15 @@ img.superpose2 {
   cursor: pointer;
 }
 
+@media screen and (max-width:600px) {
+  #bandeaux {
+    width: 100%;
+    justify-content : flex-end;
+  }
+  #bandeaux img {
+    width: 60%;
+  }
+}
 
 /* =====================
 Contact
