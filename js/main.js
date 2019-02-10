@@ -150,13 +150,13 @@
           $(this).addClass("hideMouche");
           nbCollision += 1;
           if (nbCollision>4 && nbCollision<10 && cam2===false) {
-            $("#CAMmachoire1").fadeIn(500);
-            $("#CAMcorps1").fadeIn(500);
+            $("#CAMmachoire1").fadeIn(100);
+            $("#CAMcorps1").fadeIn(100);
             $("#CAMmachoire").fadeOut(500);
             $("#CAMcorps").fadeOut(500);
           } else if (nbCollision>9 && cam3===false) {
-            $("#CAMcorps3").fadeIn(500);
-            $("#CAMmachoire2").fadeIn(500);
+            $("#CAMcorps3").fadeIn(100);
+            $("#CAMmachoire2").fadeIn(100);
             $("#CAMcorps1").fadeOut(500);
             $("#CAMmachoire1").fadeOut(500);
           }
