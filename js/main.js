@@ -89,7 +89,7 @@
       // console.log("X: " + mouseX);
       // console.log("Y: " + mouseY);
       let rotationDegrees = Math.atan2(-mouseY, -mouseX) * 180 / Math.PI + 180;
-      let eyeSpace = $('#CAMpupille').width() * 0.005;
+      let eyeSpace = $('#CAMpupille').width() * 0.007;
       eyes.style.transform = `rotate(${rotationDegrees}deg) translateX(${eyeSpace}px) rotate(-${rotationDegrees}deg)`
       // console.log(e);
     });
@@ -102,8 +102,8 @@
 
     document.querySelector('body').addEventListener('mousemove', (ev) => {
       let langue = document.querySelector('#langueBox');
-      let mouseXL = ev.pageX - $('#CAMpupille').width() * 0.18;
-      let mouseYL = ev.pageY - document.querySelector('#home').offsetHeight - $('#CAMpupille').height() * 0.23;
+      let mouseXL = ev.pageX - $('#CAMpupille').width() * 0.355;
+      let mouseYL = ev.pageY - document.querySelector('#home').offsetHeight - $('#CAMpupille').height() * 0.282;
       // console.log("X: " + mouseXL);
       // console.log("Y: " + mouseYL + "     " + ev.pageY);
       let rotationDegreesL = Math.atan2(-mouseYL, -mouseXL) * 180 / Math.PI + 180;
@@ -120,9 +120,17 @@
           $(this).removeClass("eatMouth");
           next();
       });
+      $("#CAMmachoire1").addClass("eatMouth").delay(500).queue(function(next){
+          $(this).removeClass("eatMouth");
+          next();
+      });
+      $("#CAMmachoire2").addClass("eatMouth").delay(500).queue(function(next){
+          $(this).removeClass("eatMouth");
+          next();
+      });
 
-      let langueTop = $('#CAMpupille').height() * 0.21;
-      let langueLeft = $('#CAMpupille').width() * 0.19;
+      let langueTop = $('#CAMpupille').height() * 0.282;
+      let langueLeft = $('#CAMpupille').width() * 0.355;
 
       $("#langueBox").css({"top":langueTop, "left":langueLeft}).animate({
         width:langueWidth,
@@ -133,10 +141,27 @@
 
     //langue collision
 
+    let nbCollision = 0;
+    let cam2 = false;
+    let cam3 = false;
+
     $(document).on('click', '.mouche', function(){
       $(this).delay(200).queue(function(next){
           $(this).addClass("hideMouche");
-          $("#CAMcoeur").slideDown(200, function() {}).delay(300).queue(function(next) {
+          nbCollision += 1;
+          if (nbCollision>4 && nbCollision<10 && cam2===false) {
+            $("#CAMmachoire1").fadeIn(500);
+            $("#CAMcorps1").fadeIn(500);
+            $("#CAMmachoire").fadeOut(500);
+            $("#CAMcorps").fadeOut(500);
+          } else if (nbCollision>9 && cam3===false) {
+            $("#CAMcorps3").fadeIn(500);
+            $("#CAMmachoire2").fadeIn(500);
+            $("#CAMcorps1").fadeOut(500);
+            $("#CAMmachoire1").fadeOut(500);
+          }
+
+          $("#CAMcoeur").fadeIn(200, function() {}).delay(300).queue(function(next) {
             $("#CAMcoeur").hide();
             next();
           });
@@ -173,6 +198,29 @@
         }
 
     }, Math.floor(Math.random() * 1000 * 6));
+
+
+    // MODAL
+
+      $('.trigger1').on('click', function(e) {
+        console.log(e.target);
+        console.log(this);
+        if (e.target === this) {
+          $('.modal-wrapper1').toggleClass('open');
+          $('.page-wrapper').toggleClass('blur-it');
+          return false;
+        }
+      });
+
+      $('.trigger2').on('click', function(e) {
+        console.log(e.target);
+        console.log(this);
+        if (e.target === this) {
+          $('.modal-wrapper2').toggleClass('open');
+          $('.page-wrapper').toggleClass('blur-it');
+          return false;
+        }
+      });
 
 
     // kMoove

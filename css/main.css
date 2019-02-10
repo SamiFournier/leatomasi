@@ -748,24 +748,24 @@ img.superpose2 {
   z-index: 8;
 }
 
-#CAMcorps {
+#CAMcorps, #CAMcorps1, #CAMcorps3 {
    z-index: 14;
 }
 #CAMpupille {
    z-index: 14;
 }
-#CAMmachoire {
+#CAMmachoire, #CAMmachoire1, #CAMmachoire2 {
    z-index: 11;
-   transform-origin: 17.5% 25%;
+   transform-origin: 34% 30%;
 }
 #CAMcoeur {
   z-index: 15;
-  top : 12vh;
-  left: 18vw;
-  height: 3vh;
   display: none;
 }
 
+#CAMcorps1, #CAMcorps3, #CAMmachoire1, #CAMmachoire2 {
+  display: none;
+}
 
 #langueBox {
   overflow: hidden;
@@ -916,7 +916,7 @@ img.superpose2 {
 
 #bandeaux img {
   width: 50%;
-  margin-top: 20px;
+  margin-top: 40px;
   cursor: pointer;
 }
 
@@ -926,9 +926,84 @@ img.superpose2 {
     justify-content : flex-end;
   }
   #bandeaux img {
-    width: 60%;
+    width: 70%;
+  }
+  .modal-wrapper1 .modal, .modal-wrapper2 .modal {
+    max-width: 80%;
   }
 }
+
+/* MODAL */
+
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.blur-it {
+  filter: blur(4px);
+}
+
+
+.modal-wrapper1, .modal-wrapper2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper1.open, .modal-wrapper2.open {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  max-width: 50%;
+  position: relative;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  overflow-y: initial;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-wrapper1.open .modal, .modal-wrapper2.open .modal {
+  opacity: 1;
+}
+
+.head {
+  width: 90%;
+  padding: 5% 5% 0 5%;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.btn-close {
+  font-size: 28px;
+  display: block;
+  float: right;
+  color: #000;
+}
+
+.content {
+  padding: 0 5% 5% 5%;
+}
+
+
 
 /* =====================
 Contact
