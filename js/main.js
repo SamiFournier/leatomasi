@@ -212,6 +212,7 @@
         if (e.target === this) {
           $('.modal-wrapper1').toggleClass('open');
           $('.page-wrapper').toggleClass('blur-it');
+          $("body").toggleClass('noScroll');
           return false;
         }
       });
@@ -222,6 +223,7 @@
         if (e.target === this) {
           $('.modal-wrapper2').toggleClass('open');
           $('.page-wrapper').toggleClass('blur-it');
+          $("body").toggleClass('noScroll');
           return false;
         }
       });

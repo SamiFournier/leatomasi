@@ -967,6 +967,10 @@ img.superpose2 {
   align-items: center;
 }
 
+.noScroll {
+  overflow: hidden;
+}
+
 .modal {
   max-width: 50%;
   position: relative;
