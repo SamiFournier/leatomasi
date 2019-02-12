@@ -668,7 +668,7 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
   min-height: 100vh;
   max-width: 100%;
   overflow: hidden;
-  background-color: #0F7988;
+  background-color: #077180;
 
 }
 
@@ -706,6 +706,9 @@ img.superpose2 {
 #CAMcoeur {
   z-index: 15;
   display: none;
+}
+#CAMfond {
+  object-fit: cover;
 }
 
 #CAMcorps1, #CAMcorps3, #CAMmachoire1, #CAMmachoire2 {
