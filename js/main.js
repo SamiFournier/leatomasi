@@ -84,7 +84,7 @@
     //eye
     document.querySelector('body').addEventListener('mousemove', (e) => {
       let eyes = document.querySelector('#CAMpupille');
-      let mouseX = e.pageX - $('#CAMpupille').width() * 0.2109;
+      let mouseX = e.pageX - $('#CAMpupille').width() * 0.4;
       let mouseY = e.pageY - document.querySelector('#home').offsetHeight - $('#CAMpupille').height() * 0.2392;
       // console.log("X: " + mouseX);
       // console.log("Y: " + mouseY);
@@ -179,7 +179,7 @@
 
 
 
-    setInterval(function () {
+    let moucheInterval = setInterval(function () {
       if (document.hasFocus()) {
         let moucheIsLibellule;
 
