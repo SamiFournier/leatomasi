@@ -142,23 +142,27 @@
     //langue collision
 
     let nbCollision = 0;
-    let cam2 = false;
-    let cam3 = false;
+
 
     $(document).on('click', '.mouche', function(){
       $(this).delay(200).queue(function(next){
           $(this).addClass("hideMouche");
           nbCollision += 1;
-          if (nbCollision>4 && nbCollision<10 && cam2===false) {
+          if (nbCollision===5) {
             $("#CAMmachoire1").fadeIn(100);
             $("#CAMcorps1").fadeIn(100);
             $("#CAMmachoire").fadeOut(500);
             $("#CAMcorps").fadeOut(500);
-          } else if (nbCollision>9 && cam3===false) {
+          } else if (nbCollision===15) {
             $("#CAMcorps3").fadeIn(100);
             $("#CAMmachoire2").fadeIn(100);
             $("#CAMcorps1").fadeOut(500);
             $("#CAMmachoire1").fadeOut(500);
+          } else if (nbCollision===16) {
+            $("#CAMcorps").fadeIn(100);
+            $("#CAMmachoire").fadeIn(100);
+            $("#CAMcorps3").fadeOut(500);
+            $("#CAMmachoire2").fadeOut(500);
           }
 
           $("#CAMcoeur").fadeIn(200, function() {}).delay(300).queue(function(next) {

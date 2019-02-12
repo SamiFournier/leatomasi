@@ -1018,9 +1018,9 @@ Contact
 
 #contact::after {
   content: "";
-  background: url('../images/homepage/fond.png');
-  background-size: auto 800px;
-  opacity: 0.6;
+  background: url('../images/homepage/motif_galaxy.png');
+  background-size: auto 300px;
+  opacity: 1;
   top: 0;
   left: 0;
   bottom: 0;
