@@ -292,29 +292,29 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
   100% {transform: translate(1vw, 60vh);}
 }
 
-#cigaretteA.loaded {
-  height: 8vh;
-  animation: cigaretteA1 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+#barretteA.loaded {
+  height: 2vh;
+  animation: barretteA1 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes cigaretteA1 {
+@keyframes barretteA1 {
   0% {transform: translate(15vw, 100vh);}
   100% {transform: translate(15vw, 3vh);}
 }
 
-#cigaretteB.loaded {
-  height: 8vh;
-  animation: cigaretteB1 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+#barretteB.loaded {
+  height: 7vh;
+  animation: barretteB1 6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes cigaretteB1 {
+@keyframes barretteB1 {
   0% {transform: translate(40vw, 100vh);}
   100% {transform: translate(40vw, 30vh);}
 }
 
-#cigaretteC.loaded {
-  height: 8vh;
-  animation: cigaretteC1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+#barretteC.loaded {
+  height: 1.5vh;
+  animation: barretteC1 4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes cigaretteC1 {
+@keyframes barretteC1 {
   0% {transform: translate(70vw, 100vh);}
   100% {transform: translate(70vw, 30vh);}
 }
@@ -437,33 +437,13 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
 }
 
 
-#photoA.loaded {
-  height: 10vh;
-  animation: photoA1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+#montre.loaded {
+  height: 12vh;
+  animation: montre1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes photoA1 {
-  0% {transform: translate(77vw, 100vh);}
-  100% {transform: translate(77vw, 92vh);}
-}
-
-
-#photoL.loaded {
-  height: 10vh;
-  animation: photoL1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes photoL1 {
-  0% {transform: translate(17vw, 100vh);}
-  100% {transform: translate(17vw, 92vh);}
-}
-
-
-#photoK.loaded {
-  height: 10vh;
-  animation: photoK1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes photoK1 {
-  0% {transform: translate(55vw, 100vh);}
-  100% {transform: translate(55vw, 7vh);}
+@keyframes montre1 {
+  0% {transform: translate(57vw, 100vh);}
+  100% {transform: translate(57vw, 7vh);}
 }
 
 
@@ -515,31 +495,13 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
   100% {transform: translate(85vw, 80vh);}
 }
 
-#capsule01.loaded {
+#bagues.loaded {
   height: 5vh;
-  animation: capsule011 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+  animation: bagues1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes capsule011 {
+@keyframes bagues1 {
   0% {transform: translate(23vw, 100vh);}
   100% {transform: translate(23vw, 5vh);}
-}
-
-#capsule02.loaded {
-  height: 5vh;
-  animation: capsule021 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes capsule021 {
-  0% {transform: translate(40vw, 100vh);}
-  100% {transform: translate(40vw, 50vh);}
-}
-
-#capsule03.loaded {
-  height: 5vh;
-  animation: capsule031 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes capsule031 {
-  0% {transform: translate(65vw, 100vh);}
-  100% {transform: translate(65vw, 37vh);}
 }
 
 #chouchou.loaded {
@@ -558,15 +520,6 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
 @keyframes converse1 {
   0% {transform: translate(2vw, 100vh);}
   100% {transform: translate(2vw, 42vh);}
-}
-
-#tétine.loaded {
-  height: 7vh;
-  animation: tétine1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes tétine1 {
-  0% {transform: translate(45vw, 100vh);}
-  100% {transform: translate(45vw, 92vh);}
 }
 
 #Metro_Lyon01.loaded {
@@ -632,23 +585,15 @@ nav a.menuLink:hover::after, nav a.menuLink:hover::before, nav a.menuLink.active
   100% {transform: translate(34vw, 80vh);}
 }
 
-#parfum2.loaded {
-  height: 15vh;
-  animation: parfum21 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
+#stylo.loaded {
+  height: 13vh;
+  animation: stylo1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
 }
-@keyframes parfum21 {
+@keyframes stylo1 {
   0% {transform: translate(70vw, 100vh);}
   100% {transform: translate(70vw, 85vh);}
 }
 
-#app_photo_vintage.loaded {
-  height: 11vh;
-  animation: app_photo_vintage1 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1S 1 normal both;
-}
-@keyframes app_photo_vintage1 {
-  0% {transform: translate(12vw, 100vh);}
-  100% {transform: translate(12vw, 76vh);}
-}
 
 #poupee_russe.loaded {
   height: 13vh;
