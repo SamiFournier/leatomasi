@@ -6,6 +6,10 @@ body {
   max-height: 100vh;
 }
 
+iframe {
+  width: 100%;
+}
+
 
 /* =====================
       LOADER
@@ -459,7 +463,7 @@ body {
   background: #fff;
   opacity: 0;
   transition: all 0.5s ease-in-out;
-  overflow-y: initial;
+  overflow-y: auto;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -485,7 +489,10 @@ body {
 
 .content {
   margin: 0 5% 5% 5%;
+  padding: 0 3% 3% 3%;
   font-weight: 100;
+  width: 90%;
+  text-align: justify;
   display: flex;
   overflow-y: auto;
   flex-direction: column;
@@ -501,6 +508,8 @@ body {
 
 .imgModal {
   width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .dwlBtn {
