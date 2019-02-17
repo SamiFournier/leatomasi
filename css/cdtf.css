@@ -389,7 +389,9 @@ iframe {
 
 
 .modal-wrapper1,
+.modal-wrapper4,
 .modal-wrapper5,
+.modal-wrapper6,
 .modal-wrapper7,
 .modal-wrapper12,
 .modal-wrapper15,
@@ -398,8 +400,14 @@ iframe {
 .modal-wrapper21,
 .modal-wrapper24,
 .modal-wrapper26,
+.modal-wrapper32,
+.modal-wrapper33,
+.modal-wrapper34,
+.modal-wrapper39,
 .modal-wrapper36,
 .modal-wrapper40,
+.modal-wrapper41,
+.modal-wrapper44,
 .modal-wrapper47,
 .modal-wrapper49 {
   width: 100%;
@@ -414,7 +422,9 @@ iframe {
 }
 
 .modal-wrapper1.open,
+.modal-wrapper4.open,
 .modal-wrapper5.open,
+.modal-wrapper6.open,
 .modal-wrapper7.open,
 .modal-wrapper12.open,
 .modal-wrapper15.open,
@@ -423,8 +433,14 @@ iframe {
 .modal-wrapper21.open,
 .modal-wrapper24.open,
 .modal-wrapper26.open,
+.modal-wrapper32.open,
+.modal-wrapper33.open,
+.modal-wrapper34.open,
 .modal-wrapper36.open,
+.modal-wrapper39.open,
 .modal-wrapper40.open,
+.modal-wrapper41.open,
+.modal-wrapper44.open,
 .modal-wrapper47.open,
 .modal-wrapper49.open {
   opacity: 1;
@@ -436,7 +452,9 @@ iframe {
 }
 
 .modal-wrapper1.open .modal,
+.modal-wrapper4.open .modal,
 .modal-wrapper5.open .modal,
+.modal-wrapper6.open .modal,
 .modal-wrapper7.open .modal,
 .modal-wrapper12.open .modal,
 .modal-wrapper15.open .modal,
@@ -445,8 +463,14 @@ iframe {
 .modal-wrapper21.open .modal,
 .modal-wrapper24.open .modal,
 .modal-wrapper26.open .modal,
+.modal-wrapper32.open .modal,
+.modal-wrapper33.open .modal,
+.modal-wrapper34.open .modal,
 .modal-wrapper36.open .modal,
+.modal-wrapper39.open .modal,
 .modal-wrapper40.open .modal,
+.modal-wrapper41.open .modal,
+.modal-wrapper44.open .modal,
 .modal-wrapper47.open .modal,
 .modal-wrapper49.open .modal {
   opacity: 1;
