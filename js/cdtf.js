@@ -227,6 +227,16 @@
         return false;
       }
     });
+    $('.triggerFusee').on('click', function(e) {
+      console.log(e.target);
+      console.log(this);
+      if (e.target === this) {
+        $('.modal-wrapperFusee').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        $("body").toggleClass('noScroll');
+        return false;
+      }
+    });
     $('.trigger49').on('click', function(e) {
       console.log(e.target);
       console.log(this);
