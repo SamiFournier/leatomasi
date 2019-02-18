@@ -12,8 +12,8 @@
 
     $(".lampe").on("click",function(){
       $(".lampe").toggleClass("lampeHide");
-      // $("#penombre").fadeToggle(200, "linear");
-      $("#penombre").toggleClass("lampeHide");
+      $("#penombre").fadeToggle(500, "linear");
+      // $("#penombre").toggleClass("lampeHide");
     });
 
     // MODAL
@@ -22,6 +22,26 @@
       console.log(this);
       if (e.target === this) {
         $('.modal-wrapper1').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        $("body").toggleClass('noScroll');
+        return false;
+      }
+    });
+    $('.trigger2').on('click', function(e) {
+      console.log(e.target);
+      console.log(this);
+      if (e.target === this) {
+        $('.modal-wrapper2').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        $("body").toggleClass('noScroll');
+        return false;
+      }
+    });
+    $('.trigger3').on('click', function(e) {
+      console.log(e.target);
+      console.log(this);
+      if (e.target === this) {
+        $('.modal-wrapper3').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         $("body").toggleClass('noScroll');
         return false;
@@ -62,6 +82,16 @@
       console.log(this);
       if (e.target === this) {
         $('.modal-wrapper7').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        $("body").toggleClass('noScroll');
+        return false;
+      }
+    });
+    $('.trigger8').on('click', function(e) {
+      console.log(e.target);
+      console.log(this);
+      if (e.target === this) {
+        $('.modal-wrapper8').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         $("body").toggleClass('noScroll');
         return false;
@@ -122,6 +152,16 @@
       console.log(this);
       if (e.target === this) {
         $('.modal-wrapper19').toggleClass('open');
+        $('.page-wrapper').toggleClass('blur-it');
+        $("body").toggleClass('noScroll');
+        return false;
+      }
+    });
+    $('.trigger20').on('click', function(e) {
+      console.log(e.target);
+      console.log(this);
+      if (e.target === this) {
+        $('.modal-wrapper20').toggleClass('open');
         $('.page-wrapper').toggleClass('blur-it');
         $("body").toggleClass('noScroll');
         return false;

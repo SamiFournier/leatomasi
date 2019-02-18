@@ -389,10 +389,13 @@ iframe {
 
 
 .modal-wrapper1,
+.modal-wrapper2,
+.modal-wrapper3,
 .modal-wrapper4,
 .modal-wrapper5,
 .modal-wrapper6,
 .modal-wrapper7,
+.modal-wrapper8,
 .modal-wrapper10,
 .modal-wrapper12,
 .modal-wrapper15,
@@ -427,10 +430,13 @@ iframe {
 }
 
 .modal-wrapper1.open,
+.modal-wrapper2.open,
+.modal-wrapper3.open,
 .modal-wrapper4.open,
 .modal-wrapper5.open,
 .modal-wrapper6.open,
 .modal-wrapper7.open,
+.modal-wrapper8.open,
 .modal-wrapper10.open,
 .modal-wrapper12.open,
 .modal-wrapper15.open,
@@ -462,10 +468,13 @@ iframe {
 }
 
 .modal-wrapper1.open .modal,
+.modal-wrapper2.open .modal,
+.modal-wrapper3.open .modal,
 .modal-wrapper4.open .modal,
 .modal-wrapper5.open .modal,
 .modal-wrapper6.open .modal,
 .modal-wrapper7.open .modal,
+.modal-wrapper8.open .modal,
 .modal-wrapper10.open .modal,
 .modal-wrapper12.open .modal,
 .modal-wrapper15.open .modal,
@@ -546,7 +555,7 @@ iframe {
 }
 
 .imgModal {
-  width: 90%;
+  max-width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
